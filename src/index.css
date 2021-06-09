@@ -1,0 +1,128 @@
+/* Global Styles */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.7;
+}
+
+.game__header {
+  font-size: 1.9em;
+  line-height: 1.1;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 15px;
+  background: #e22222;
+  color: #fff;
+}
+
+.game__footer {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  background-color: lightgray;
+  color: black;
+  z-index: 999;
+  bottom: 0;
+  height: 33px;
+  font-size: 15px;
+  padding-top: 4px;
+  border-top: solid black 1px;
+}
+
+/* Main Content Styles */
+.game__main-section {
+  font-size: 1.6em;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 700px;
+}
+
+.guess-form__input,
+.guess-form__button,
+.game__start-new-game-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+.guess-form__button {
+  display: inline;
+  width: 183px;
+  height: 51px;
+  font-size: 1.2em;
+  margin: 6px;
+  border: 3px solid transparent;
+  background-color: blue;
+  color: #fff;
+}
+
+.guess-form__button--disabled {
+  opacity: 0.7;
+}
+
+.results__heading {
+  font-size: 1.8em;
+}
+
+.results__list {
+  list-style-type: none;
+}
+
+.results__list-item {
+  display: inline;
+  margin-right: 10px;
+}
+
+.results__feedback {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 20px;
+  margin: 15px 0;
+}
+
+.results__feedback--correct {
+  background: #008000;
+  color: #fff;
+}
+
+.results__feedback--incorrect {
+  background: #ff0000;
+  color: #000;
+}
+
+.game__start-new-game-button {
+  width: 183px;
+  height: 51px;
+  font-size: 1.2em;
+  margin: 6px;
+  border: 3px solid transparent;
+  background-color: blue;
+  color: #fff;
+}
+
+.field-err {
+  text-align: center;
+}
+
+.attempts {
+  width: 100%;
+  height: 51px;
+  font-size: 1.5em;
+  border: 6px solid transparent;
+  margin: 6px;
+  background-color: blue;
+  color: #fff;
+}
